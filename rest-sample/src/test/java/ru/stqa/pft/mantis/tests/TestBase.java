@@ -15,7 +15,7 @@ import java.io.IOException;
 import org.apache.http.client.fluent.Executor;
 
 public class TestBase {
-
+    //вынес в отдельный модуль
     public void skipIfNotFixed(int issueId) throws IOException{
         if (isIssueOpen(issueId)) {
             throw new SkipException("Ignored because of issue " + issueId);

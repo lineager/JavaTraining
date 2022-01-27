@@ -15,7 +15,7 @@ import java.util.Set;
 import static org.testng.Assert.assertEquals;
 
 public class RestAssuredTest extends TestBase{
-
+    //вынес в отдельный модуль
     @BeforeClass
     public void init() {
         RestAssured.authentication = RestAssured.basic("288f44776e7bec4bf44fdfeb1e646490", "");

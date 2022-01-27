@@ -3,6 +3,7 @@ package ru.stqa.pft.mantis.model;
 import java.util.Objects;
 
 public class Issue {
+    //вынес в отдельный модуль
     private int id;
     private String subject;
     private String description;

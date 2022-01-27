@@ -17,7 +17,7 @@ import java.util.Set;
 import static org.testng.Assert.assertEquals;
 
 public class RestTest extends TestBase{
-
+    //вынес в отдельный модуль
     @Test
     public void creationIssueTest() throws IOException {
         Set<Issue> oldIssues = getIssues();
