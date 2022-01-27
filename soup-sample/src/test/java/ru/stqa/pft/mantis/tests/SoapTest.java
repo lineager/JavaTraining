@@ -12,7 +12,7 @@ import java.util.Set;
 import static org.testng.Assert.assertEquals;
 
 public class SoapTest extends TestBase{
-
+    //Для задания 17
     @Test
     public void getProjectsTest() throws IOException, ServiceException {
         skipIfNotFixed(9);
