@@ -1,0 +1,20 @@
+[
+  {
+    "name": "name 0",
+    "surname": "surname 0",
+    "lastName": "lastname 0",
+    "email": "email 0"
+  },
+  {
+    "name": "name 1",
+    "surname": "surname 1",
+    "lastName": "lastname 1",
+    "email": "email 1"
+  },
+  {
+    "name": "name 2",
+    "surname": "surname 2",
+    "lastName": "lastname 2",
+    "email": "email 2"
+  }
+]

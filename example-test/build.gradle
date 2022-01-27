@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation 'org.testng:testng:7.1.0'
+  implementation 'org.testng:testng:7.1.0'
+  implementation 'org.testng:testng:7.1.0'
+  testImplementation  'org.testng:testng:7.4.0'
+  implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.0.0'
+  implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.0'
+  implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.13'
+
+}
