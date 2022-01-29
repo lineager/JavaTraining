@@ -70,6 +70,7 @@ public class Contact {
     @Type(type = "text")
     private String photo;
 
+    private String group;
     @Expose
     @Column(name = "address")
     @Type(type = "text")
@@ -78,7 +79,6 @@ public class Contact {
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "address_in_groups" , joinColumns = @JoinColumn(name = "id"), inverseJoinColumns = @JoinColumn(name = "group_id"))
     private Set<Group> groups = new HashSet<>();
-
 
     public Contact withPhoto(File photo) {
         this.photo = photo.getPath();
@@ -156,6 +156,10 @@ public class Contact {
         return this;
     }
 
+    public Contact withGroup(String group) {
+        this.group = group;
+        return this;
+    }
 
     public int getId() {
         return id;
@@ -221,6 +225,9 @@ public class Contact {
         return new Groups(groups);
     }
 
+    public String getGroup() {
+        return group;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

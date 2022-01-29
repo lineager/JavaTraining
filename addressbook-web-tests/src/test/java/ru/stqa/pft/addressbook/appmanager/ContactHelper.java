@@ -10,6 +10,7 @@ import ru.stqa.pft.addressbook.model.Contact;
 import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.Group;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -64,7 +65,7 @@ public class ContactHelper extends HelperBase {
     }
 
     //нажать ок при удалении контакта
-    public void selectOoForDeleteContact() {
+    public void selectOKForDeleteContact() {
         wd.switchTo().alert().accept();
     }
 
@@ -110,6 +111,20 @@ public class ContactHelper extends HelperBase {
 
     private Contacts contactCache = null;
 
+    public List<Contact> getContactList() {
+        List<Contact> contacts = new ArrayList<>();
+        List<WebElement> elements = wd.findElements(By.xpath("//tr[@name = 'entry']"));
+        for (WebElement element : elements) {
+            List<WebElement> column = element.findElements(By.xpath(".//td"));
+            String name = column.get(2).getText();
+            String lastName = column.get(1).getText();
+            int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+            Contact contact = new Contact().withName(name).withLastName(lastName).withId(id);
+            contacts.add(contact);
+        }
+        return contacts;
+    }
+
     public Contacts all() {
         if (contactCache != null){
             return new Contacts(contactCache);
@@ -132,7 +147,7 @@ public class ContactHelper extends HelperBase {
     public void delete(Contact contact) {
         selectContactById(contact.getId());
         deleteContactButton();
-        selectOoForDeleteContact();
+        selectOKForDeleteContact();
         contactCache = null;
         returnHomePage();
     }
