@@ -1,6 +1,5 @@
 package ru.stqa.pft.addressbook.tests;
 
-import com.sun.org.glassfish.gmbal.Description;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.TestBase;
@@ -29,7 +28,6 @@ public class ContactsAddToGroup extends TestBase {
     }
 
     @Test
-    @Description("Добавить контакт в группу")
     public void addToGroupTest () {
         app.goTo().returnToHomePage();
         Contact contact = newContact();
