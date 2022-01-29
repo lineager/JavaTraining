@@ -9,13 +9,8 @@ import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.Contact;
 import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.Group;
-import ru.stqa.pft.addressbook.model.Groups;
 
-import javax.xml.bind.Element;
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 
 public class ContactHelper extends HelperBase {
@@ -140,6 +135,16 @@ public class ContactHelper extends HelperBase {
         selectOoForDeleteContact();
         contactCache = null;
         returnHomePage();
+    }
+
+    public void deleteContactFromGroup(Contact contact, int id) {
+        selectGroup(id);
+        selectContactById(contact.getId());
+        click(By.name("remove"));
+    }
+
+    public void selectGroup(int id) {
+        new Select(wd.findElement(By.name("group"))).selectByValue(String.valueOf(id));
     }
 
     public Contact infoInfoFromEditForm(Contact contact) {
