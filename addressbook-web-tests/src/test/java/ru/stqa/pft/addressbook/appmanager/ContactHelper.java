@@ -127,8 +127,9 @@ public class ContactHelper extends HelperBase {
             String lastName = column.get(1).getText();
             String allPhones = column.get(5).getText();
             String allEmails = column.get(4).getText();
+            String address = column.get(3).getText();
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-            contactCache.add(new Contact().withId(id).withName(name).withLastName(lastName).withAllPhones(allPhones).withAllEmails(allEmails));
+            contactCache.add(new Contact().withId(id).withName(name).withLastName(lastName).withAllPhones(allPhones).withAllEmails(allEmails).withAddress(address));
         }
         return  new Contacts(contactCache);
     }
