@@ -30,7 +30,7 @@ public class For9taskTest extends TestBase {
         }
 
         List<Contact> before = app.contact().getContactList();
-        app.contact().editContactButtonById(before.size() - 1);
+        app.contact().selectContact(before.size() - 1);
         Contact user = new Contact().withId(before.get(before.size() - 1).getId()).withName("Сергей").withSurname("Сергеев").withLastName( "Сергеевич").withEmail("sereja@gmail.com");
         app.contact().fillContactForm(user, false);
         app.contact().editSaveContactButton();
@@ -52,7 +52,7 @@ public class For9taskTest extends TestBase {
         }
 
         List<Contact> before = app.contact().getContactList();
-        app.contact().editContactButtonById(before.size() - 1);
+        app.contact().selectContact(before.size() - 1);
         app.contact().deleteContactButton();
         app.contact().selectOKForDeleteContact();
         List<Contact> after = app.contact().getContactList();;

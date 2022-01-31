@@ -42,7 +42,7 @@ public class ContactHelper extends HelperBase {
 
     //выбрать первый контакт из списка
     public void selectContact(int index) {
-        wd.findElements(By.xpath("//*[@id=\"maintable\"]//*[@id]")).get(index).click();
+        wd.findElements(By.xpath("//img[@alt='Edit']")).get(index).click();
     }
 
     private void selectContactById(int id) {
