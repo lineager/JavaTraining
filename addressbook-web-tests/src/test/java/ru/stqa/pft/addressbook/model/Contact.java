@@ -69,7 +69,7 @@ public class Contact {
     @Column(name = "photo")
     @Type(type = "text")
     private String photo;
-
+    @Transient
     private String group;
     @Expose
     @Column(name = "address")

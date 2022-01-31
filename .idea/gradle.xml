@@ -8,6 +8,7 @@
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../Gradle/gradle-7.0.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/addressbook-web-tests" />
@@ -15,10 +16,11 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
-        <option name="delegatedBuild" value="false" />
-        <option name="testRunner" value="PLATFORM" />
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/example-test" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../Gradle/gradle-7.0.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/example-test" />
@@ -30,6 +32,7 @@
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/rest-sample" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../Gradle/gradle-7.0.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/rest-sample" />
@@ -37,10 +40,11 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
-        <option name="delegatedBuild" value="false" />
-        <option name="testRunner" value="PLATFORM" />
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../Gradle/gradle-7.0.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/sandbox" />
@@ -52,6 +56,7 @@
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/soap-sample" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../Gradle/gradle-7.0.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/soap-sample" />
