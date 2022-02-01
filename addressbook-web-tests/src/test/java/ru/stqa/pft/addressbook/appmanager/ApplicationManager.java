@@ -35,12 +35,12 @@ public class ApplicationManager {
     public void init() {
         String browser = "CHROME";
         dbHelper = new DbHelper();
-//        try {
-//            String target = System.getProperty("target", "local");
-//            properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
-//        } catch (IOException e) {
-//            System.out.println("!!!!ACHTUNG file not found");
-//        }
+        try {
+            String target = System.getProperty("target", "local");
+            properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
+        } catch (IOException e) {
+            System.out.println("!!!!ACHTUNG file not found");
+        }
         if("".equals(properties.getProperty("selenium.server"))) {
             if (browser.equals(properties.getProperty("web.browser"))) {
                 wd = new ChromeDriver();
