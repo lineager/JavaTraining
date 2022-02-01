@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.tests.ContactPhoneAndEmailsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-31T05:16:15" hostname="VRN118" time="6.132">
+  <properties/>
+  <testcase name="testContactPhoneAndEmail" classname="ru.stqa.pft.addressbook.tests.ContactPhoneAndEmailsTest" time="6.132"/>
+  <system-out><![CDATA[08:16:15.955 [Test worker] INFO  ru.stqa.pft.addressbook.TestBase - Start testtestContactPhoneAndEmailwith parameters []
+08:16:22.087 [Test worker] INFO  ru.stqa.pft.addressbook.TestBase - Stop test testContactPhoneAndEmail
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.tests.ContactModificationTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-01-31T05:15:59" hostname="VRN118" time="11.352">
+  <properties/>
+  <testcase name="testContactModification" classname="ru.stqa.pft.addressbook.tests.ContactModificationTests" time="11.352">
+    <failure message="java.lang.AssertionError: &#10;Expected: &lt;[Contact{id=120, name='РџРµС‚СЂ'}, Contact{id=118, name='name 1'}, Contact{id=119, name='name 2'}, Contact{id=121, name='name 0'}, Contact{id=122, name='name 1'}, Contact{id=123, name='name 2'}, Contact{id=114, name='РџРµС‚СЂ'}]&gt;&#10;     but: was &lt;[Contact{id=120, name='РџРµС‚СЂ'}, Contact{id=121, name='РџРµС‚СЂ'}, Contact{id=118, name='name 1'}, Contact{id=119, name='name 2'}, Contact{id=122, name='name 1'}, Contact{id=123, name='name 2'}, Contact{id=114, name='РџРµС‚СЂ'}]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: &lt;[Contact{id=120, name='РџРµС‚СЂ'}, Contact{id=118, name='name 1'}, Contact{id=119, name='name 2'}, Contact{id=121, name='name 0'}, Contact{id=122, name='name 1'}, Contact{id=123, name='name 2'}, Contact{id=114, name='РџРµС‚СЂ'}]&gt;
+     but: was &lt;[Contact{id=120, name='РџРµС‚СЂ'}, Contact{id=121, name='РџРµС‚СЂ'}, Contact{id=118, name='name 1'}, Contact{id=119, name='name 2'}, Contact{id=122, name='name 1'}, Contact{id=123, name='name 2'}, Contact{id=114, name='РџРµС‚СЂ'}]&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at ru.stqa.pft.addressbook.tests.ContactModificationTests.testContactModification(ContactModificationTests.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:135)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <system-out><![CDATA[08:15:59.004 [Test worker] INFO  ru.stqa.pft.addressbook.TestBase - Start testtestContactModificationwith parameters []
+Hibernate: select contact0_.id as id1_1_, contact0_.address as address2_1_, contact0_.email as email3_1_, contact0_.email2 as email4_1_, contact0_.email3 as email5_1_, contact0_.home as home6_1_, contact0_.lastName as lastname7_1_, contact0_.mobile as mobile8_1_, contact0_.firstname as firstnam9_1_, contact0_.photo as photo10_1_, contact0_.middlename as middlen11_1_, contact0_.work as work12_1_ from addressbook contact0_ where deprecated='0000-00-00'
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+Hibernate: select contact0_.id as id1_1_, contact0_.address as address2_1_, contact0_.email as email3_1_, contact0_.email2 as email4_1_, contact0_.email3 as email5_1_, contact0_.home as home6_1_, contact0_.lastName as lastname7_1_, contact0_.mobile as mobile8_1_, contact0_.firstname as firstnam9_1_, contact0_.photo as photo10_1_, contact0_.middlename as middlen11_1_, contact0_.work as work12_1_ from addressbook contact0_ where deprecated='0000-00-00'
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+Hibernate: select contact0_.id as id1_1_, contact0_.address as address2_1_, contact0_.email as email3_1_, contact0_.email2 as email4_1_, contact0_.email3 as email5_1_, contact0_.home as home6_1_, contact0_.lastName as lastname7_1_, contact0_.mobile as mobile8_1_, contact0_.firstname as firstnam9_1_, contact0_.photo as photo10_1_, contact0_.middlename as middlen11_1_, contact0_.work as work12_1_ from addressbook contact0_ where deprecated='0000-00-00'
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+Hibernate: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, group1_.group_id as group_id1_2_1_, group1_.group_footer as group_fo2_2_1_, group1_.group_header as group_he3_2_1_, group1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list group1_ on groups0_.group_id=group1_.group_id where groups0_.id=?
+08:16:10.370 [Test worker] INFO  ru.stqa.pft.addressbook.TestBase - Stop test testContactModification
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
